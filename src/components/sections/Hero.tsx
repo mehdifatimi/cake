@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-brand-cream">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-cream pt-40 pb-20 lg:pt-0 lg:pb-0">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
         <div className="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-pink blur-[120px]" />
@@ -32,10 +32,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight mb-6"
+            className="text-4xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight mb-4 md:mb-6"
           >
             Taste the Art of <br />
-            <span className="text-gold-gradient italic">Luxury</span>
+            <span className="text-gold-gradient italic text-5xl md:text-8xl">Luxury</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -54,13 +54,13 @@ export default function Hero() {
           >
             <Link
               href="/menu"
-              className="bg-brand-brown text-brand-cream px-10 py-4 rounded-full font-medium tracking-wide hover:bg-brand-gold hover:text-brand-brown transition-all duration-300 text-center shadow-lg hover:shadow-brand-gold/20"
+              className="bg-brand-brown text-brand-cream px-8 py-3 md:px-10 md:py-4 rounded-full font-medium tracking-wide hover:bg-brand-gold hover:text-brand-brown transition-all duration-300 text-center shadow-lg hover:shadow-brand-gold/20"
             >
               Order Now
             </Link>
             <Link
               href="/gallery"
-              className="border border-brand-brown/20 text-brand-brown px-10 py-4 rounded-full font-medium tracking-wide hover:border-brand-gold hover:text-brand-gold transition-all duration-300 text-center"
+              className="border border-brand-brown/20 text-brand-brown px-8 py-3 md:px-10 md:py-4 rounded-full font-medium tracking-wide hover:border-brand-gold hover:text-brand-gold transition-all duration-300 text-center"
             >
               View Gallery
             </Link>

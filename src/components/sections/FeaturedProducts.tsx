@@ -18,7 +18,7 @@ const featuredProducts = [
     name: "Velvet Truffle Cake",
     description: "Indulgent dark chocolate layers with silk ganache and gold leaf finish.",
     price: "$65.00",
-    image: "/menu.jpeg",
+    image: "/gg22redvelvettruffleheart500_638x.webp",
     category: "Cakes"
   },
   {
@@ -26,7 +26,7 @@ const featuredProducts = [
     name: "Pistachio Éclairs",
     description: "Handcrafted choux pastry filled with premium Sicilian pistachio cream.",
     price: "$18.00",
-    image: "https://images.unsplash.com/photo-1511081692775-05d0f180a065?q=80&w=1000&auto=format&fit=crop",
+    image: "/2510a7b7cacc476bb7234320f8263ce8.jpg",
     category: "Pastries"
   }
 ];

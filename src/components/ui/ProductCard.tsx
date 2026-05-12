@@ -1,11 +1,11 @@
 "use client";
 
-
 import { motion } from "framer-motion";
 import { ShoppingCart, Plus } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 interface ProductProps {
-  id: number;
+  id: number | string;
   name: string;
   description: string;
   price: string;
@@ -13,7 +13,13 @@ interface ProductProps {
   category: string;
 }
 
-export default function ProductCard({ name, description, price, image, category }: ProductProps) {
+export default function ProductCard({ id, name, description, price, image, category }: ProductProps) {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({ id, name, price, image, category });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -34,7 +40,10 @@ export default function ProductCard({ name, description, price, image, category 
           </span>
         </div>
         <div className="absolute inset-0 bg-brand-brown/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <button className="bg-brand-cream text-brand-brown p-4 rounded-full shadow-xl hover:bg-brand-gold hover:text-white transition-all transform translate-y-4 group-hover:translate-y-0 duration-300">
+          <button 
+            onClick={handleAddToCart}
+            className="bg-brand-cream text-brand-brown p-4 rounded-full shadow-xl hover:bg-brand-gold hover:text-white transition-all transform translate-y-4 group-hover:translate-y-0 duration-300"
+          >
             <Plus size={24} />
           </button>
         </div>
@@ -47,7 +56,10 @@ export default function ProductCard({ name, description, price, image, category 
         <p className="text-brand-brown/60 text-sm leading-relaxed mb-6 line-clamp-2">
           {description}
         </p>
-        <button className="w-full py-3 rounded-xl border border-brand-brown/10 text-brand-brown font-medium tracking-wide flex items-center justify-center gap-2 hover:bg-brand-brown hover:text-brand-cream transition-all group/btn">
+        <button 
+          onClick={handleAddToCart}
+          className="w-full py-3 rounded-xl border border-brand-brown/10 text-brand-brown font-medium tracking-wide flex items-center justify-center gap-2 hover:bg-brand-brown hover:text-brand-cream transition-all group/btn"
+        >
           <ShoppingCart size={18} className="group-hover/btn:scale-110 transition-transform" />
           Add to Cart
         </button>

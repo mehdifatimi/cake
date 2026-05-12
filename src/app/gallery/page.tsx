@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 const galleryImages = [
   "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000",
   "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1000",
-  "https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1000",
+  "/2510a7b7cacc476bb7234320f8263ce8.jpg",
   "https://images.unsplash.com/photo-1519340241574-2dec49daa24a?q=80&w=1000",
   "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1000",
   "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?q=80&w=1000",

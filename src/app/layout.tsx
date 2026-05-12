@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   keywords: ["luxury bakery", "gourmet cakes", "french patisserie", "custom desserts", "macarons"],
 };
 
+import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/layout/CartDrawer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +32,10 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${poppins.variable} font-sans antialiased bg-brand-cream text-brand-brown`}
       >
-        {children}
+        <CartProvider>
+          <CartDrawer />
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
