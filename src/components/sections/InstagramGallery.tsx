@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const InstagramIcon = ({ size = 24, className = "" }: { size?: number, className?: string }) => (
   <svg
@@ -26,7 +25,7 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1000&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519340241574-2dec49daa24a?q=80&w=1000&auto=format&fit=crop",
+  "/KakaoTalk_20221025_220009946_06.webp",
   "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1000&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?q=80&w=1000&auto=format&fit=crop",
 ];
@@ -57,11 +56,10 @@ export default function InstagramGallery() {
             transition={{ delay: index * 0.1 }}
             className="relative aspect-square group cursor-pointer overflow-hidden"
           >
-            <Image
+            <img
               src={img}
               alt={`Gallery image ${index + 1}`}
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-brand-brown/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <InstagramIcon className="text-white" size={32} />

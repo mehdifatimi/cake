@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-6 md:py-8",
         scrolled ? "glass-morphism py-3 shadow-sm" : "bg-transparent"
       )}
     >
@@ -39,9 +39,9 @@ export default function Navbar() {
           <Image 
             src="/logo.png" 
             alt="NuTreat Logo" 
-            width={150} 
-            height={50} 
-            className="h-10 w-auto object-contain"
+            width={200} 
+            height={80} 
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </Link>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm uppercase tracking-widest font-medium hover:text-brand-gold transition-colors"
+              className="text-base uppercase tracking-[0.2em] font-semibold hover:text-brand-gold transition-colors"
             >
               {link.name}
             </Link>

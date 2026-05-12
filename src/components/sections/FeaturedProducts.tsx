@@ -10,7 +10,7 @@ const featuredProducts = [
     name: "Classic Macarons",
     description: "Our signature assortment of delicate French macarons in six seasonal flavors.",
     price: "$24.00",
-    image: "https://images.unsplash.com/photo-1569864358642-9d16197022c3?q=80&w=1000&auto=format&fit=crop",
+    image: "/Macaron-Birthday-Cake-09-edited-scaled.webp",
     category: "Macarons"
   },
   {
@@ -18,7 +18,7 @@ const featuredProducts = [
     name: "Velvet Truffle Cake",
     description: "Indulgent dark chocolate layers with silk ganache and gold leaf finish.",
     price: "$65.00",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop",
+    image: "/menu.jpeg",
     category: "Cakes"
   },
   {

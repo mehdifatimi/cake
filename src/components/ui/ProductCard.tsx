@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { ShoppingCart, Plus } from "lucide-react";
 
@@ -23,11 +23,10 @@ export default function ProductCard({ name, description, price, image, category 
       className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-brand-gold/5"
     >
       <div className="relative aspect-[4/5] overflow-hidden">
-        <Image
+        <img
           src={image}
           alt={name}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute top-4 left-4">
           <span className="bg-brand-cream/90 backdrop-blur-md text-brand-brown text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 rounded-full border border-brand-gold/20">

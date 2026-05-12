@@ -61,9 +61,9 @@ export default function Footer() {
             <Image 
               src="/logo.png" 
               alt="NuTreat Logo" 
-              width={180} 
-              height={60} 
-              className="h-12 w-auto object-contain brightness-0 invert"
+              width={220} 
+              height={80} 
+              className="h-16 md:h-20 w-auto object-contain brightness-0 invert"
             />
           </Link>
           <p className="text-brand-cream/70 leading-relaxed mb-6">
