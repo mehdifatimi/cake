@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import FeaturedProducts from "@/components/sections/FeaturedProducts";
+import Packs from "@/components/sections/Packs";
 import InstagramGallery from "@/components/sections/InstagramGallery";
 import Testimonials from "@/components/sections/Testimonials";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturedProducts />
+      <Packs />
       
       {/* Brand Highlight Section */}
       <section className="py-24 bg-brand-brown text-brand-cream overflow-hidden">

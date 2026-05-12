@@ -6,28 +6,28 @@ import Link from "next/link";
 
 const featuredProducts = [
   {
-    id: 1,
-    name: "Classic Macarons",
-    description: "Our signature assortment of delicate French macarons in six seasonal flavors.",
-    price: "$24.00",
-    image: "/Macaron-Birthday-Cake-09-edited-scaled.webp",
-    category: "Macarons"
+    id: "cupcake-1",
+    name: "The Classic",
+    description: "Our timeless chocolate cupcake with rich cocoa and silky ganache topping.",
+    price: "10.00 DH",
+    image: "/choclate.jpeg",
+    category: "Cupcakes"
   },
   {
-    id: 2,
-    name: "Velvet Truffle Cake",
-    description: "Indulgent dark chocolate layers with silk ganache and gold leaf finish.",
-    price: "$65.00",
-    image: "/gg22redvelvettruffleheart500_638x.webp",
-    category: "Cakes"
+    id: "cupcake-2",
+    name: "The Fit",
+    description: "A healthy pistachio-infused delight with a light, nutritious profile.",
+    price: "12.00 DH",
+    image: "/pistage.jpeg",
+    category: "Cupcakes"
   },
   {
-    id: 3,
-    name: "Pistachio Éclairs",
-    description: "Handcrafted choux pastry filled with premium Sicilian pistachio cream.",
-    price: "$18.00",
-    image: "/2510a7b7cacc476bb7234320f8263ce8.jpg",
-    category: "Pastries"
+    id: "cupcake-3",
+    name: "The Care",
+    description: "Velvety caramel masterpiece crafted with love and golden caramel swirls.",
+    price: "15.00 DH",
+    image: "/caramel.jpeg",
+    category: "Cupcakes"
   }
 ];
 

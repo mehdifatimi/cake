@@ -76,7 +76,7 @@ export default function Hero() {
           <div className="absolute inset-0 border-2 border-brand-gold/30 rounded-[3rem] rotate-6 scale-95" />
           <div className="relative w-full h-full rounded-[3rem] overflow-hidden shadow-2xl bg-brand-pink/20">
             <img
-              src="/proudact.jpeg"
+              src="/pistage.jpeg"
               alt="NuTreat Featured Product"
               className="w-full h-full object-cover border-4 border-brand-gold/10"
             />
